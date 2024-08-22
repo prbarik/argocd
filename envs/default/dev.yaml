@@ -12,4 +12,11 @@ spec:
     directory:
       recurse: true
     path: envs/default
+    targetRevision: main
     repoURL: https://github.com/prbarik/argocd
+  syncPolicy: 
+    automated:
+      prune: true
+      selfHeal: true
+    syncOption:
+      - CreateNamespace=true
