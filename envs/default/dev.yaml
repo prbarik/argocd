@@ -15,5 +15,5 @@ spec:
     targetRevision: main
     repoURL: https://github.com/prbarik/argocd
   syncPolicy: 
-    syncOption:
-      - CreateNamespace=true 
+    syncOptions:
+    - CreateNamespace=true
